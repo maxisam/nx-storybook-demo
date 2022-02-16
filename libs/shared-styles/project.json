@@ -1,0 +1,42 @@
+{
+  "projectType": "library",
+  "root": "libs/shared-styles",
+  "sourceRoot": "libs/shared-styles/src",
+  "prefix": "nx-test",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:package",
+      "outputs": ["dist/libs/shared-styles"],
+      "options": {
+        "project": "libs/shared-styles/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/shared-styles/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/shared-styles/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/shared-styles"],
+      "options": {
+        "jestConfig": "libs/shared-styles/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/shared-styles/src/**/*.ts",
+          "libs/shared-styles/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
