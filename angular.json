@@ -3,6 +3,7 @@
   "projects": {
     "sb-test": "apps/sb-test",
     "sb-test-e2e": "apps/sb-test-e2e",
+    "shared-component": "libs/shared-component",
     "shared-styles": "libs/shared-styles"
   }
 }

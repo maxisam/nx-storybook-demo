@@ -1,0 +1,42 @@
+{
+  "projectType": "library",
+  "root": "libs/shared-component",
+  "sourceRoot": "libs/shared-component/src",
+  "prefix": "nx-test",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:package",
+      "outputs": ["dist/libs/shared-component"],
+      "options": {
+        "project": "libs/shared-component/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/shared-component/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/shared-component/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/shared-component"],
+      "options": {
+        "jestConfig": "libs/shared-component/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/shared-component/src/**/*.ts",
+          "libs/shared-component/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": ["lib"]
+}

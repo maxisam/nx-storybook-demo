@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@ml/shared-component": ["libs/shared-component/src/index.ts"],
       "@ml/shared-styles": ["libs/shared-styles/src/index.ts"]
     }
   },
