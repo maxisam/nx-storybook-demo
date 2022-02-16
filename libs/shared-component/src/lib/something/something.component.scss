@@ -1,0 +1,7 @@
+@use 'variables';
+
+.test {
+  background-color: variables.$color;
+  width: 100px;
+  height: 100px;
+}
