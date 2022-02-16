@@ -16,6 +16,9 @@
         "inlineStyleLanguage": "scss",
         "assets": ["apps/sb-test/src/favicon.ico", "apps/sb-test/src/assets"],
         "styles": ["apps/sb-test/src/styles.scss"],
+        "stylePreprocessorOptions": {
+          "includePaths": ["libs/shared-styles/src/lib/styles"]
+        },
         "scripts": []
       },
       "configurations": {
