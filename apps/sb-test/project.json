@@ -114,6 +114,7 @@
         "config": {
           "configFolder": "apps/sb-test/.storybook"
         },
+        "styles": ["libs/shared-styles/src/lib/styles/variables.scss"],
         "projectBuildConfig": "sb-test"
       },
       "configurations": {

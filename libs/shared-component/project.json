@@ -62,6 +62,7 @@
         "config": {
           "configFolder": "libs/shared-component/.storybook"
         },
+        "styles": ["libs/shared-styles/src/lib/styles/variables.scss"],
         "projectBuildConfig": "shared-component:build-storybook"
       },
       "configurations": {
