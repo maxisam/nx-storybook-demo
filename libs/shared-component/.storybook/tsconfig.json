@@ -5,5 +5,5 @@
   },
 
   "exclude": ["../**/*.spec.ts"],
-  "include": ["../src/**/*", "*.js"]
+  "include": ["../src/**/*", "*.js", "../../../apps/sb-test/src/**/*"]
 }
