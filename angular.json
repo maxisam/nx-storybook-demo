@@ -4,6 +4,7 @@
     "sb-test": "apps/sb-test",
     "sb-test-e2e": "apps/sb-test-e2e",
     "shared-component": "libs/shared-component",
+    "shared-component-e2e": "apps/shared-component-e2e",
     "shared-styles": "libs/shared-styles"
   }
 }

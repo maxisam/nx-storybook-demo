@@ -36,6 +36,39 @@
           "libs/shared-component/src/**/*.html"
         ]
       }
+    },
+    "storybook": {
+      "executor": "@nrwl/storybook:storybook",
+      "options": {
+        "uiFramework": "@storybook/angular",
+        "port": 4400,
+        "config": {
+          "configFolder": "libs/shared-component/.storybook"
+        },
+        "projectBuildConfig": "shared-component:build-storybook"
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    },
+    "build-storybook": {
+      "executor": "@nrwl/storybook:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "uiFramework": "@storybook/angular",
+        "outputPath": "dist/storybook/shared-component",
+        "config": {
+          "configFolder": "libs/shared-component/.storybook"
+        },
+        "projectBuildConfig": "shared-component:build-storybook"
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
     }
   },
   "tags": ["lib"]
